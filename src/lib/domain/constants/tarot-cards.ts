@@ -1,0 +1,746 @@
+import type { Card } from '../models/Card';
+
+export const TAROT_CARDS: Card[] = [
+	// Major Arcana (0-21)
+	{
+		id: 0,
+		name: 'The Fool',
+		arcana: 'major',
+		uprightMeaning: '新しい始まり、自由、冒険',
+		reversedMeaning: '無謀、軽率、方向性の欠如',
+		imageUrl: '/cards/00-fool.webp'
+	},
+	{
+		id: 1,
+		name: 'The Magician',
+		arcana: 'major',
+		uprightMeaning: '創造性、スキル、意志の力',
+		reversedMeaning: '操作、未熟さ、力不足',
+		imageUrl: '/cards/01-magician.webp'
+	},
+	{
+		id: 2,
+		name: 'The High Priestess',
+		arcana: 'major',
+		uprightMeaning: '直感、神秘、内なる声',
+		reversedMeaning: '秘密、不信、無視された直感',
+		imageUrl: '/cards/02-high-priestess.webp'
+	},
+	{
+		id: 3,
+		name: 'The Empress',
+		arcana: 'major',
+		uprightMeaning: '豊かさ、母性、自然',
+		reversedMeaning: '依存、窒息、空虚',
+		imageUrl: '/cards/03-empress.webp'
+	},
+	{
+		id: 4,
+		name: 'The Emperor',
+		arcana: 'major',
+		uprightMeaning: '権威、構造、支配',
+		reversedMeaning: '専制、硬直、支配欲',
+		imageUrl: '/cards/04-emperor.webp'
+	},
+	{
+		id: 5,
+		name: 'The Hierophant',
+		arcana: 'major',
+		uprightMeaning: '伝統、教え、精神的指導',
+		reversedMeaning: '反抗、型破り、個人的信念',
+		imageUrl: '/cards/05-hierophant.webp'
+	},
+	{
+		id: 6,
+		name: 'The Lovers',
+		arcana: 'major',
+		uprightMeaning: '愛、調和、選択',
+		reversedMeaning: '不調和、不均衡、ミスアライメント',
+		imageUrl: '/cards/06-lovers.webp'
+	},
+	{
+		id: 7,
+		name: 'The Chariot',
+		arcana: 'major',
+		uprightMeaning: '意志、決意、成功',
+		reversedMeaning: '喪失、妨害、方向性の欠如',
+		imageUrl: '/cards/07-chariot.webp'
+	},
+	{
+		id: 8,
+		name: 'Strength',
+		arcana: 'major',
+		uprightMeaning: '勇気、忍耐、内なる力',
+		reversedMeaning: '自己不信、弱さ、不安',
+		imageUrl: '/cards/08-strength.webp'
+	},
+	{
+		id: 9,
+		name: 'The Hermit',
+		arcana: 'major',
+		uprightMeaning: '内省、探求、孤独',
+		reversedMeaning: '孤立、孤独、引きこもり',
+		imageUrl: '/cards/09-hermit.webp'
+	},
+	{
+		id: 10,
+		name: 'Wheel of Fortune',
+		arcana: 'major',
+		uprightMeaning: '運命、変化、サイクル',
+		reversedMeaning: '不運、抵抗、外的力',
+		imageUrl: '/cards/10-wheel.webp'
+	},
+	{
+		id: 11,
+		name: 'Justice',
+		arcana: 'major',
+		uprightMeaning: '正義、公正、真実',
+		reversedMeaning: '不公正、不正、不均衡',
+		imageUrl: '/cards/11-justice.webp'
+	},
+	{
+		id: 12,
+		name: 'The Hanged Man',
+		arcana: 'major',
+		uprightMeaning: '犠牲、待機、新しい視点',
+		reversedMeaning: '停滞、抵抗、先延ばし',
+		imageUrl: '/cards/12-hanged-man.webp'
+	},
+	{
+		id: 13,
+		name: 'Death',
+		arcana: 'major',
+		uprightMeaning: '終わり、変容、移行',
+		reversedMeaning: '抵抗、停滞、腐敗',
+		imageUrl: '/cards/13-death.webp'
+	},
+	{
+		id: 14,
+		name: 'Temperance',
+		arcana: 'major',
+		uprightMeaning: 'バランス、節制、忍耐',
+		reversedMeaning: '不均衡、過剰、自己治癒の欠如',
+		imageUrl: '/cards/14-temperance.webp'
+	},
+	{
+		id: 15,
+		name: 'The Devil',
+		arcana: 'major',
+		uprightMeaning: '束縛、物質主義、執着',
+		reversedMeaning: '解放、自由、解脱',
+		imageUrl: '/cards/15-devil.webp'
+	},
+	{
+		id: 16,
+		name: 'The Tower',
+		arcana: 'major',
+		uprightMeaning: '突然の変化、混乱、啓示',
+		reversedMeaning: '回避された災害、恐れ、抵抗',
+		imageUrl: '/cards/16-tower.webp'
+	},
+	{
+		id: 17,
+		name: 'The Star',
+		arcana: 'major',
+		uprightMeaning: '希望、信仰、インスピレーション',
+		reversedMeaning: '絶望、信仰の喪失、否定性',
+		imageUrl: '/cards/17-star.webp'
+	},
+	{
+		id: 18,
+		name: 'The Moon',
+		arcana: 'major',
+		uprightMeaning: '幻想、不安、潜在意識',
+		reversedMeaning: '混乱の解放、抑圧された恐怖',
+		imageUrl: '/cards/18-moon.webp'
+	},
+	{
+		id: 19,
+		name: 'The Sun',
+		arcana: 'major',
+		uprightMeaning: '成功、活力、喜び',
+		reversedMeaning: '過度の楽観主義、遅延した成功',
+		imageUrl: '/cards/19-sun.webp'
+	},
+	{
+		id: 20,
+		name: 'Judgement',
+		arcana: 'major',
+		uprightMeaning: '判断、再生、内なる声',
+		reversedMeaning: '自己批判、後悔、内なる批判',
+		imageUrl: '/cards/20-judgement.webp'
+	},
+	{
+		id: 21,
+		name: 'The World',
+		arcana: 'major',
+		uprightMeaning: '完成、達成、充実',
+		reversedMeaning: '未完成、遅延、空虚',
+		imageUrl: '/cards/21-world.webp'
+	},
+
+	// Minor Arcana - Wands (22-35)
+	{
+		id: 22,
+		name: 'Ace of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 1,
+		uprightMeaning: '創造、意欲、新しい始まり',
+		reversedMeaning: '遅延、不確実性、欠如した方向性',
+		imageUrl: '/cards/wands-01.webp'
+	},
+	{
+		id: 23,
+		name: 'Two of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 2,
+		uprightMeaning: '計画、進歩、決断',
+		reversedMeaning: '優柔不断、恐れ、個人目標',
+		imageUrl: '/cards/wands-02.webp'
+	},
+	{
+		id: 24,
+		name: 'Three of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 3,
+		uprightMeaning: '拡大、先見性、リーダーシップ',
+		reversedMeaning: '障害、遅延、欲求不満',
+		imageUrl: '/cards/wands-03.webp'
+	},
+	{
+		id: 25,
+		name: 'Four of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 4,
+		uprightMeaning: '祝賀、調和、家',
+		reversedMeaning: '不安定、欠如した支援',
+		imageUrl: '/cards/wands-04.webp'
+	},
+	{
+		id: 26,
+		name: 'Five of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 5,
+		uprightMeaning: '競争、対立、多様性',
+		reversedMeaning: '回避、尊重、合意',
+		imageUrl: '/cards/wands-05.webp'
+	},
+	{
+		id: 27,
+		name: 'Six of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 6,
+		uprightMeaning: '勝利、認識、成功',
+		reversedMeaning: '失敗、自己不信、欠如した認識',
+		imageUrl: '/cards/wands-06.webp'
+	},
+	{
+		id: 28,
+		name: 'Seven of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 7,
+		uprightMeaning: '挑戦、防御、粘り強さ',
+		reversedMeaning: '圧倒、降伏、疲労',
+		imageUrl: '/cards/wands-07.webp'
+	},
+	{
+		id: 29,
+		name: 'Eight of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 8,
+		uprightMeaning: '速度、進歩、動き',
+		reversedMeaning: '遅延、欲求不満、障害',
+		imageUrl: '/cards/wands-08.webp'
+	},
+	{
+		id: 30,
+		name: 'Nine of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 9,
+		uprightMeaning: '粘り強さ、勇気、テスト',
+		reversedMeaning: '疲労、妄想、防御的',
+		imageUrl: '/cards/wands-09.webp'
+	},
+	{
+		id: 31,
+		name: 'Ten of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		number: 10,
+		uprightMeaning: '負担、責任、過重労働',
+		reversedMeaning: '責任の放棄、委任、解放',
+		imageUrl: '/cards/wands-10.webp'
+	},
+	{
+		id: 32,
+		name: 'Page of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		uprightMeaning: '探求、熱意、自由精神',
+		reversedMeaning: '焦り、欠如した方向性',
+		imageUrl: '/cards/wands-page.webp'
+	},
+	{
+		id: 33,
+		name: 'Knight of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		uprightMeaning: 'エネルギー、情熱、冒険',
+		reversedMeaning: '衝動性、焦り、無謀',
+		imageUrl: '/cards/wands-knight.webp'
+	},
+	{
+		id: 34,
+		name: 'Queen of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		uprightMeaning: '勇気、決意、喜び',
+		reversedMeaning: '嫉妬、不安、自己中心',
+		imageUrl: '/cards/wands-queen.webp'
+	},
+	{
+		id: 35,
+		name: 'King of Wands',
+		arcana: 'minor',
+		suit: 'wands',
+		uprightMeaning: 'リーダーシップ、ビジョン、起業家精神',
+		reversedMeaning: '支配的、暴君的、傲慢',
+		imageUrl: '/cards/wands-king.webp'
+	},
+
+	// Minor Arcana - Cups (36-49)
+	{
+		id: 36,
+		name: 'Ace of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 1,
+		uprightMeaning: '愛、新しい関係、直感',
+		reversedMeaning: '感情的損失、抑圧された感情',
+		imageUrl: '/cards/cups-01.webp'
+	},
+	{
+		id: 37,
+		name: 'Two of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 2,
+		uprightMeaning: 'パートナーシップ、団結、ロマンス',
+		reversedMeaning: '不均衡、壊れた関係',
+		imageUrl: '/cards/cups-02.webp'
+	},
+	{
+		id: 38,
+		name: 'Three of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 3,
+		uprightMeaning: '祝賀、友情、創造性',
+		reversedMeaning: '過剰、ゴシップ、孤立',
+		imageUrl: '/cards/cups-03.webp'
+	},
+	{
+		id: 39,
+		name: 'Four of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 4,
+		uprightMeaning: '瞑想、熟考、無関心',
+		reversedMeaning: '意識、好機、選択',
+		imageUrl: '/cards/cups-04.webp'
+	},
+	{
+		id: 40,
+		name: 'Five of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 5,
+		uprightMeaning: '損失、後悔、失望',
+		reversedMeaning: '許し、前進、受容',
+		imageUrl: '/cards/cups-05.webp'
+	},
+	{
+		id: 41,
+		name: 'Six of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 6,
+		uprightMeaning: '懐かしさ、思い出、無邪気さ',
+		reversedMeaning: '過去に囚われる、未来への焦点',
+		imageUrl: '/cards/cups-06.webp'
+	},
+	{
+		id: 42,
+		name: 'Seven of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 7,
+		uprightMeaning: '選択、幻想、空想',
+		reversedMeaning: '整合性、決断、明確さ',
+		imageUrl: '/cards/cups-07.webp'
+	},
+	{
+		id: 43,
+		name: 'Eight of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 8,
+		uprightMeaning: '撤退、逃避、失望',
+		reversedMeaning: '徘徊、恐れ、低い自尊心',
+		imageUrl: '/cards/cups-08.webp'
+	},
+	{
+		id: 44,
+		name: 'Nine of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 9,
+		uprightMeaning: '満足、幸福、願いの実現',
+		reversedMeaning: '不満、傲慢、物質主義',
+		imageUrl: '/cards/cups-09.webp'
+	},
+	{
+		id: 45,
+		name: 'Ten of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		number: 10,
+		uprightMeaning: '調和、幸福、家族',
+		reversedMeaning: '壊れた家、家庭内の争い',
+		imageUrl: '/cards/cups-10.webp'
+	},
+	{
+		id: 46,
+		name: 'Page of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		uprightMeaning: '創造的、直感的、好奇心',
+		reversedMeaning: '感情的不成熟、創造的ブロック',
+		imageUrl: '/cards/cups-page.webp'
+	},
+	{
+		id: 47,
+		name: 'Knight of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		uprightMeaning: 'ロマンス、魅力、想像力',
+		reversedMeaning: '非現実的、嫉妬、気まぐれ',
+		imageUrl: '/cards/cups-knight.webp'
+	},
+	{
+		id: 48,
+		name: 'Queen of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		uprightMeaning: '思いやり、直感、感性',
+		reversedMeaning: '感情的不安定、依存、殉教者',
+		imageUrl: '/cards/cups-queen.webp'
+	},
+	{
+		id: 49,
+		name: 'King of Cups',
+		arcana: 'minor',
+		suit: 'cups',
+		uprightMeaning: '感情的バランス、外交、寛容',
+		reversedMeaning: '感情的操作、気まぐれ、圧倒',
+		imageUrl: '/cards/cups-king.webp'
+	},
+
+	// Minor Arcana - Swords (50-63)
+	{
+		id: 50,
+		name: 'Ace of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 1,
+		uprightMeaning: '新しいアイデア、明確さ、突破',
+		reversedMeaning: '混乱、混沌、欠如した明確さ',
+		imageUrl: '/cards/swords-01.webp'
+	},
+	{
+		id: 51,
+		name: 'Two of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 2,
+		uprightMeaning: '困難な選択、膠着状態、回避',
+		reversedMeaning: '優柔不断、混乱、情報過多',
+		imageUrl: '/cards/swords-02.webp'
+	},
+	{
+		id: 52,
+		name: 'Three of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 3,
+		uprightMeaning: '傷心、悲しみ、苦痛',
+		reversedMeaning: '回復、許し、前進',
+		imageUrl: '/cards/swords-03.webp'
+	},
+	{
+		id: 53,
+		name: 'Four of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 4,
+		uprightMeaning: '休息、回復、瞑想',
+		reversedMeaning: '疲労、燃え尽き、ストレス',
+		imageUrl: '/cards/swords-04.webp'
+	},
+	{
+		id: 54,
+		name: 'Five of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 5,
+		uprightMeaning: '対立、敗北、不名誉',
+		reversedMeaning: '赦し、和解、過去を手放す',
+		imageUrl: '/cards/swords-05.webp'
+	},
+	{
+		id: 55,
+		name: 'Six of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 6,
+		uprightMeaning: '移行、変化、解放',
+		reversedMeaning: '抵抗、未解決の問題',
+		imageUrl: '/cards/swords-06.webp'
+	},
+	{
+		id: 56,
+		name: 'Seven of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 7,
+		uprightMeaning: '欺瞞、策略、戦略',
+		reversedMeaning: '良心、真実の告白',
+		imageUrl: '/cards/swords-07.webp'
+	},
+	{
+		id: 57,
+		name: 'Eight of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 8,
+		uprightMeaning: '制限、閉じ込め、犠牲者意識',
+		reversedMeaning: '解放、自己受容、新しい視点',
+		imageUrl: '/cards/swords-08.webp'
+	},
+	{
+		id: 58,
+		name: 'Nine of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 9,
+		uprightMeaning: '不安、悪夢、絶望',
+		reversedMeaning: '回復、希望、受容',
+		imageUrl: '/cards/swords-09.webp'
+	},
+	{
+		id: 59,
+		name: 'Ten of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		number: 10,
+		uprightMeaning: '終わり、裏切り、損失',
+		reversedMeaning: '回復、再生、抵抗',
+		imageUrl: '/cards/swords-10.webp'
+	},
+	{
+		id: 60,
+		name: 'Page of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		uprightMeaning: '好奇心、警戒、新しいアイデア',
+		reversedMeaning: 'ゴシップ、欺瞞、操作',
+		imageUrl: '/cards/swords-page.webp'
+	},
+	{
+		id: 61,
+		name: 'Knight of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		uprightMeaning: '野心、行動、速さ',
+		reversedMeaning: '衝動、無謀、不注意',
+		imageUrl: '/cards/swords-knight.webp'
+	},
+	{
+		id: 62,
+		name: 'Queen of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		uprightMeaning: '独立、公平、明確な境界',
+		reversedMeaning: '冷酷、苦い、復讐的',
+		imageUrl: '/cards/swords-queen.webp'
+	},
+	{
+		id: 63,
+		name: 'King of Swords',
+		arcana: 'minor',
+		suit: 'swords',
+		uprightMeaning: '知的、真実、倫理',
+		reversedMeaning: '操作的、暴君的、冷酷',
+		imageUrl: '/cards/swords-king.webp'
+	},
+
+	// Minor Arcana - Pentacles (64-77)
+	{
+		id: 64,
+		name: 'Ace of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 1,
+		uprightMeaning: '機会、繁栄、新しい事業',
+		reversedMeaning: '損失、欠如した計画、不安定',
+		imageUrl: '/cards/pentacles-01.webp'
+	},
+	{
+		id: 65,
+		name: 'Two of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 2,
+		uprightMeaning: 'バランス、適応性、時間管理',
+		reversedMeaning: '不均衡、混沌、圧倒',
+		imageUrl: '/cards/pentacles-02.webp'
+	},
+	{
+		id: 66,
+		name: 'Three of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 3,
+		uprightMeaning: 'チームワーク、協力、スキル',
+		reversedMeaning: '不調和、欠如した協力',
+		imageUrl: '/cards/pentacles-03.webp'
+	},
+	{
+		id: 67,
+		name: 'Four of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 4,
+		uprightMeaning: '保守、安全、貯蓄',
+		reversedMeaning: '強欲、物質主義、自己保護',
+		imageUrl: '/cards/pentacles-04.webp'
+	},
+	{
+		id: 68,
+		name: 'Five of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 5,
+		uprightMeaning: '経済的損失、貧困、不安',
+		reversedMeaning: '回復、改善、慈善',
+		imageUrl: '/cards/pentacles-05.webp'
+	},
+	{
+		id: 69,
+		name: 'Six of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 6,
+		uprightMeaning: '寛大さ、慈善、共有',
+		reversedMeaning: '借金、不均等、自己奉仕',
+		imageUrl: '/cards/pentacles-06.webp'
+	},
+	{
+		id: 70,
+		name: 'Seven of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 7,
+		uprightMeaning: '評価、報酬、投資',
+		reversedMeaning: '欠如した報酬、遅延、欲求不満',
+		imageUrl: '/cards/pentacles-07.webp'
+	},
+	{
+		id: 71,
+		name: 'Eight of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 8,
+		uprightMeaning: '職人技、スキル、努力',
+		reversedMeaning: '完璧主義、欠如した焦点',
+		imageUrl: '/cards/pentacles-08.webp'
+	},
+	{
+		id: 72,
+		name: 'Nine of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 9,
+		uprightMeaning: '豊かさ、贅沢、自立',
+		reversedMeaning: '経済的挫折、過度の贅沢',
+		imageUrl: '/cards/pentacles-09.webp'
+	},
+	{
+		id: 73,
+		name: 'Ten of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		number: 10,
+		uprightMeaning: '富、遺産、家族',
+		reversedMeaning: '経済的損失、壊れた伝統',
+		imageUrl: '/cards/pentacles-10.webp'
+	},
+	{
+		id: 74,
+		name: 'Page of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		uprightMeaning: '野心、勤勉、目標設定',
+		reversedMeaning: '欠如した進歩、先延ばし',
+		imageUrl: '/cards/pentacles-page.webp'
+	},
+	{
+		id: 75,
+		name: 'Knight of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		uprightMeaning: '効率、責任、保守性',
+		reversedMeaning: '怠惰、頑固、完璧主義',
+		imageUrl: '/cards/pentacles-knight.webp'
+	},
+	{
+		id: 76,
+		name: 'Queen of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		uprightMeaning: '実用的、養育的、繁栄',
+		reversedMeaning: '物質主義、嫉妬、不信',
+		imageUrl: '/cards/pentacles-queen.webp'
+	},
+	{
+		id: 77,
+		name: 'King of Pentacles',
+		arcana: 'minor',
+		suit: 'pentacles',
+		uprightMeaning: '富、ビジネス、リーダーシップ',
+		reversedMeaning: '強欲、物質主義、頑固',
+		imageUrl: '/cards/pentacles-king.webp'
+	}
+];
+
+export function getCardById(id: number): Card | undefined {
+	return TAROT_CARDS.find((card) => card.id === id);
+}
+
+export function shuffleCards(): Card[] {
+	const cards = [...TAROT_CARDS];
+	for (let i = cards.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[cards[i], cards[j]] = [cards[j], cards[i]];
+	}
+	return cards;
+}
