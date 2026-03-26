@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "typecheck:full": "tsc --noEmit --skipLibCheck false"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",

@@ -27,6 +27,7 @@
 >
   <div class="card-inner">
     <div class="card-front">
+      <img src={card.imageUrl} alt="" />
       <div class="card-content">
         <h3>{card.name}</h3>
         <p class="meaning">
@@ -91,6 +92,17 @@
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     transform: rotateY(180deg);
+    flex-direction: column;
+  }
+
+  .card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .card-back {
@@ -101,6 +113,11 @@
   .card-content {
     padding: 20px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    margin: 10px;
   }
 
   .card-content h3 {
@@ -135,13 +152,13 @@
       height: 225px;
     }
 
-    .card-content h3 {
+    /* .card-content h3 {
       font-size: 16px;
     }
 
     .card-content .meaning {
       font-size: 12px;
-    }
+    } */
 
     .card-pattern {
       font-size: 60px;

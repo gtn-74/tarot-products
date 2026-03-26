@@ -13,4 +13,5 @@ export interface DrawnCard {
 	card: Card;
 	position: number; // Position in spread
 	reversed: boolean; // Is reversed
+	flipped: boolean; // Is flipped (face up)
 }

@@ -1,0 +1,60 @@
+.spread-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spread-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.spread {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+}
+
+.spread.one-oracle {
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.spread.three-card {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.spread.celtic-cross {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+
+.card-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.position-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .spread.three-card {
+    grid-template-columns: 1fr;
+  }
+
+  .spread.celtic-cross {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .spread-container h2 {
+    font-size: 24px;
+  }
+}

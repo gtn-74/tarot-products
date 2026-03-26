@@ -1,6 +1,6 @@
 <script lang="ts">
   import Deck from "$lib/presentation/components/Deck.svelte";
-  import Spread from "$lib/presentation/components/Spread.svelte";
+  import Spread from "$lib/presentation/components/Spread/Spread.svelte";
   import {
     deckStore,
     setCards,
